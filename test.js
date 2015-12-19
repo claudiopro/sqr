@@ -72,3 +72,23 @@ test('sqr throws if passed non numeric arguments', function (t) {
 
   t.end();
 });
+
+test('isSquare throws if passed non numeric arguments', function (t) {
+  t.throws(isSquare.bind(null, 'a'));
+  t.throws(isSquare.bind(null, null));
+  t.throws(isSquare.bind(null, undefined));
+  t.throws(isSquare.bind(null, []));
+  t.throws(isSquare.bind(null, {}));
+
+  t.end();
+});
+
+test('nearest throws if passed non numeric arguments', function (t) {
+  t.throws(nearest.bind(null, 'a'));
+  t.throws(nearest.bind(null, null));
+  t.throws(nearest.bind(null, undefined));
+  t.throws(nearest.bind(null, []));
+  t.throws(nearest.bind(null, {}));
+
+  t.end();
+});
