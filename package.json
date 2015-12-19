@@ -1,0 +1,19 @@
+{
+  "name": "sqr",
+  "version": "1.0.0",
+  "description": "Calculates the square of numbers, and checks if they're square numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "keywords": [
+    "math",
+    "square",
+    "power"
+  ],
+  "author": "Claudio Procida",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
