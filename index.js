@@ -24,9 +24,8 @@ sqr.isSquare = function(y) {
 sqr.nearest = function(y) {
   check(y);
   var x = Math.sqrt(y)|0,
-    x0 = x|0,
-    y1 = x0 * x0,
-    y2 = (1 + x0) * (1 + x0);
+    y1 = x * x,
+    y2 = (1 + x) * (1 + x);
   return y - y1 > y2 - y ? y2 : y1;
 };
 
