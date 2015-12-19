@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/claudiopro/sqr.svg?branch=master)](https://travis-ci.org/claudiopro/sqr)
+
 # sqr
 
 Peasy easy math square function. Returns the product of a number multiplied by itself.
