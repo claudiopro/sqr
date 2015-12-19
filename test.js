@@ -9,7 +9,7 @@ var test = require('tape'),
   isSquare = sqr.isSquare,
   nearest = sqr.nearest;
 
-test('squares of integers', function (t) {
+test('sqr calculates squares of integers', function (t) {
   t.is(0, sqr(0));
   t.is(4, sqr(2));
   t.is(1, sqr(-1));
@@ -17,7 +17,7 @@ test('squares of integers', function (t) {
   t.end();
 });
 
-test('check squares of integers', function (t) {
+test('isSquare detects squares of integers', function (t) {
   t.true(isSquare(49));
   t.true(isSquare(36));
   t.true(isSquare(25));
@@ -37,7 +37,7 @@ test('check squares of integers', function (t) {
   t.end();
 });
 
-test('nearest squares of integers', function (t) {
+test('nearest finds nearest squares of integers', function (t) {
   t.is(49, nearest(52));
   t.is(36, nearest(39));
   t.is(25, nearest(30));
@@ -59,6 +59,16 @@ test('nearest squares of integers', function (t) {
   t.is(16, nearest(16));
   t.is(9, nearest(9));
   t.is(1, nearest(1));
+
+  t.end();
+});
+
+test('sqr throws if passed non numeric arguments', function (t) {
+  t.throws(sqr.bind(null, 'a'));
+  t.throws(sqr.bind(null, null));
+  t.throws(sqr.bind(null, undefined));
+  t.throws(sqr.bind(null, []));
+  t.throws(sqr.bind(null, {}));
 
   t.end();
 });

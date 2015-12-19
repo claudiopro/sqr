@@ -5,6 +5,9 @@
  */
 
 function sqr(x) {
+  if (typeof x !== 'number') {
+    throw 'not a number!';
+  }
   return x * x;
 }
 
