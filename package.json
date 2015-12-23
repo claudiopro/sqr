@@ -15,5 +15,13 @@
   "license": "BSD-3-Clause",
   "devDependencies": {
     "tape": "^4.2.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiopro/sqr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/claudiopro/sqr/issues"
+  },
+  "homepage": "https://github.com/claudiopro/sqr#readme"
 }
