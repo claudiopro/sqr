@@ -1,6 +1,6 @@
 {
   "name": "sqr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculates the square of numbers, and checks if they're square numbers",
   "main": "index.js",
   "scripts": {
