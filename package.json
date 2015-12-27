@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/claudiopro/sqr/issues"
   },
-  "homepage": "https://github.com/claudiopro/sqr#readme"
+  "homepage": "https://github.com/claudiopro/sqr#readme",
+  "tonicExampleFilename": "tonicExample.js"
 }
